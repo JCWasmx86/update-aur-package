@@ -36,9 +36,6 @@ echo "::endgroup::Setup"
 
 echo "::group::Build"
 
-echo "Building and installing dependencies"
-makepkg --noconfirm -s -c
-
 echo "Updating SRCINFO"
 makepkg --printsrcinfo >.SRCINFO
 
