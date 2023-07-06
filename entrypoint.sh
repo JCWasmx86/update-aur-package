@@ -26,6 +26,7 @@ echo "Cloning repo"
 cd /tmp
 git clone "$REPO_URL"
 cd "$INPUT_PACKAGE_NAME"
+git switch master
 
 echo "Setting version: ${NEW_RELEASE}"
 sed -i "s/pkgver=.*$/pkgver=${NEW_RELEASE}/" PKGBUILD
